@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ספיר מיידני | תרפיית ממדים – קריית גת והסביבה וזום</title>
+  <meta name="description" content="ספיר מיידני – מטפלת בשיטת תרפיית ממדים. טיפול רגשי שמבקש להגיע לשורש הקושי. מפגשים בקריית גת והסביבה או בזום." />
+  <meta property="og:title" content="ספיר מיידני | תרפיית ממדים" />
+  <meta property="og:description" content="טיפול שמחפש את השורש – מפגשים בקריית גת והסביבה או בזום." />
+  <meta property="og:image" content="assets/images/sapir-portrait.jpg" />
+  <meta name="theme-color" content="#4f7a3a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            leaf:  { 50:'#f3f8ee', 100:'#e3efd7', 200:'#c6dfae', 300:'#9fc97b', 400:'#76b04c', 500:'#4f9a2e', 600:'#3f7d24', 700:'#33621f', 800:'#2b4f1d', 900:'#24411a' },
+            earth: { 50:'#faf5ee', 100:'#f2e7d6', 200:'#e5cfae', 300:'#d4b183', 400:'#c4975f', 500:'#b07d46', 600:'#93643a', 700:'#774f31', 800:'#62412c', 900:'#523727' },
+            cream: '#fbf8f2'
+          },
+          fontFamily: {
+            sans: ['Heebo', 'system-ui', 'sans-serif'],
+            hand: ['"Amatic SC"', 'Heebo', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-cream font-sans text-earth-900 antialiased">
+
+  <!-- ===== Header ===== -->
+  <header id="siteHeader" class="fixed inset-x-0 top-0 z-40 transition-all duration-300">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="leaf-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" class="h-9 w-9"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f9a2e"/><stop offset="1" stop-color="#b07d46"/></linearGradient></defs><path d="M20 3c9 6 13 14 11 22-2 7-7 11-11 12-4-1-9-5-11-12C7 17 11 9 20 3z" fill="url(#lg)"/><path d="M20 10v26" stroke="#fbf8f2" stroke-width="1.6" stroke-linecap="round"/><path d="M20 18l-5-4M20 24l6-5M20 30l-6-4" stroke="#fbf8f2" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span class="leading-tight">
+          <span class="block text-lg font-extrabold text-leaf-800">ספיר מיידני</span>
+          <span class="block text-xs font-medium text-earth-600">תרפיית ממדים</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-7 text-[15px] font-medium text-earth-800 md:flex">
+        <li><a class="nav-link" href="#method">על השיטה</a></li>
+        <li><a class="nav-link" href="#process">התהליך</a></li>
+        <li><a class="nav-link" href="#about">קצת עליי</a></li>
+        <li><a class="nav-link" href="#where">איפה נפגשים</a></li>
+        <li><a href="#contact" class="rounded-full bg-leaf-600 px-5 py-2 text-white shadow-sm transition hover:bg-leaf-700">לתיאום שיחה</a></li>
+      </ul>
+
+      <button id="menuBtn" class="rounded-full p-2 text-leaf-800 md:hidden" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobileMenu">
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-earth-100 bg-cream/95 backdrop-blur md:hidden">
+      <ul class="flex flex-col gap-1 px-5 py-4 text-lg font-medium">
+        <li><a class="block py-2" href="#method">על השיטה</a></li>
+        <li><a class="block py-2" href="#process">התהליך</a></li>
+        <li><a class="block py-2" href="#about">קצת עליי</a></li>
+        <li><a class="block py-2" href="#where">איפה נפגשים</a></li>
+        <li><a class="mt-2 block rounded-full bg-leaf-600 py-3 text-center text-white" href="#contact">לתיאום שיחה</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero relative overflow-hidden pt-28 md:pt-32">
+      <div class="blob blob-a" aria-hidden="true"></div>
+      <div class="blob blob-b" aria-hidden="true"></div>
+
+      <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-5 pb-16 md:grid-cols-2 md:pb-24">
+        <div class="reveal text-center md:text-right">
+          <p class="font-hand text-3xl text-earth-600 md:text-4xl">לחזור למקום הטבעי שלך</p>
+          <h1 class="mt-2 text-4xl font-extrabold leading-tight text-leaf-800 md:text-6xl">
+            טיפול שמחפש<br />
+            <span class="grad-text">את השורש</span>
+          </h1>
+          <p class="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-earth-800 md:mx-0">
+            לפעמים אותו קושי חוזר שוב ושוב – בגוף, ברגש, בדפוסים. בתרפיית ממדים אנחנו לא מסתפקות בטיפול בסימפטום,
+            אלא יוצאות יחד למסע עדין אל המקור שלו, כדי לשחרר אותו ולפנות מקום לרוגע.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+            <a href="#contact" class="btn-primary">לשיחת היכרות</a>
+            <a href="#method" class="btn-ghost">מה זו תרפיית ממדים?</a>
+          </div>
+          <ul class="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-earth-700 md:justify-start">
+            <li class="flex items-center gap-2"><span class="dot"></span>קריית גת והסביבה</li>
+            <li class="flex items-center gap-2"><span class="dot"></span>מפגשים בזום מכל מקום</li>
+          </ul>
+        </div>
+
+        <div class="reveal relative mx-auto w-full max-w-md">
+          <div class="hero-photo-wrap">
+            <img src="assets/images/sapir-transparent.png" alt="ספיר מיידני, מטפלת בתרפיית ממדים" class="hero-photo" width="604" height="408" />
+          </div>
+        </div>
+      </div>
+
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50c180 30 360 40 540 20S900 0 1080 10s270 40 360 50v30H0z" fill="#f3f8ee"/></svg>
+    </section>
+
+    <!-- ===== Method ===== -->
+    <section id="method" class="bg-leaf-50 py-20">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="eyebrow">על השיטה</p>
+          <h2 class="section-title">מה זו תרפיית ממדים?</h2>
+          <p class="mt-5 text-lg leading-relaxed text-earth-800">
+            תרפיית ממדים היא שיטה טיפולית רגשית שמתמקדת בחוויות עבר שלא עובדו עד הסוף – חוויות קשות, טראומות
+            או רגעים שנדחקו הצידה – ובקשיים שחוזרים על עצמם שוב ושוב, רגשיים או גופניים.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="reveal card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4-3-8-6.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 4.5-4 8-8 11z"/></svg>
+            </div>
+            <h3 class="card-title">גוף ונפש – מערכת אחת</h3>
+            <p class="card-text">השיטה רואה קשר הדוק בין חוויה רגשית לבין האופן שבו היא מורגשת בגוף. משקעים שלא נפתרו יכולים להמשיך ללוות אותנו לאורך זמן.</p>
+          </article>
+          <article class="reveal card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M12 14c-3 0-6 2-7 5M12 14c3 0 6 2 7 5M12 9c-2 0-4-1-5-3M12 9c2 0 4-1 5-3"/></svg>
+            </div>
+            <h3 class="card-title">הגעה לשורש הבעיה</h3>
+            <p class="card-text">במקום לטפל רק במה שנראה מבחוץ, מחפשים יחד את החוויה המדויקת שיצרה את החסימה – ומעלים אותה למודעות.</p>
+          </article>
+          <article class="reveal card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+            </div>
+            <h3 class="card-title">מחסימה לאנרגיה חיובית</h3>
+            <p class="card-text">כשהמקור מזוהה ומובן, אפשר לנטרל את השפעתו על ההווה ולהפוך את מה שהכביד – לכוח שמאפשר לנוע הלאה.</p>
+          </article>
+        </div>
+
+        <div class="reveal mt-14 rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-leaf-100 md:p-10">
+          <h3 class="text-2xl font-bold text-leaf-800">למי זה מתאים?</h3>
+          <ul class="mt-6 grid gap-4 text-earth-800 sm:grid-cols-2">
+            <li class="check">מי שחווה קושי רגשי או גופני שחוזר שוב ושוב</li>
+            <li class="check">מי שנושא/ת חוויה או טראומה מהעבר שלא עובדה</li>
+            <li class="check">מי שמרגיש/ה "תקוע/ה" בדפוסים, פחדים או אמונות מגבילות</li>
+            <li class="check">מי שרוצה להבין את עצמו/ה לעומק ולצמוח</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section id="process" class="relative py-20">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="eyebrow">איך זה עובד</p>
+          <h2 class="section-title">התהליך בקצרה</h2>
+          <p class="mt-5 text-lg text-earth-800">תהליך אישי, עדין ומותאם – יד ביד, בקצב שנכון לך.</p>
+        </div>
+
+        <ol class="timeline mt-14">
+          <li class="reveal step">
+            <span class="step-num">1</span>
+            <div>
+              <h3 class="step-title">שיחת היכרות</h3>
+              <p class="step-text">מכירות, מקשיבות למה שמביא/ה אותך ומגדירות יחד מה חשוב לך לשנות.</p>
+            </div>
+          </li>
+          <li class="reveal step">
+            <span class="step-num">2</span>
+            <div>
+              <h3 class="step-title">איתור השורש</h3>
+              <p class="step-text">מתחקות אחר הקושי אל המקור שלו – החוויה או האמונה שיצרו את החסימה.</p>
+            </div>
+          </li>
+          <li class="reveal step">
+            <span class="step-num">3</span>
+            <div>
+              <h3 class="step-title">הבנה ומודעות</h3>
+              <p class="step-text">מעלות את מה שהיה סמוי אל המודעות, ומבינות יחד את המנגנון והסיבות.</p>
+            </div>
+          </li>
+          <li class="reveal step">
+            <span class="step-num">4</span>
+            <div>
+              <h3 class="step-title">שחרור והתמרה</h3>
+              <p class="step-text">מנטרלות את השפעת החוויה על ההווה, והופכות את מה שהכביד לאנרגיה חיובית.</p>
+            </div>
+          </li>
+          <li class="reveal step">
+            <span class="step-num">5</span>
+            <div>
+              <h3 class="step-title">צמיחה קדימה</h3>
+              <p class="step-text">מחזקות את השינוי ובונות דרכים חדשות להתמודד, לנוע ולחיות ממקום רגוע וטבעי.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="bg-gradient-to-b from-earth-50 to-cream py-20">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-5">
+        <div class="reveal md:col-span-2">
+          <div class="arch-frame mx-auto">
+            <img src="assets/images/sapir-transparent.png" alt="ספיר מיידני" loading="lazy" />
+          </div>
+        </div>
+        <div class="reveal md:col-span-3">
+          <p class="eyebrow">נעים להכיר</p>
+          <h2 class="section-title">ספיר מיידני</h2>
+          <p class="mt-1 font-hand text-3xl text-earth-600">מטפלת בשיטת תרפיית ממדים</p>
+          <div class="mt-6 space-y-4 text-lg leading-relaxed text-earth-800">
+            <p>
+              אני מאמינה שבכל אחד ואחת מאיתנו יש מקום טבעי, רגוע ושלם – ולפעמים חוויות מהדרך מכסות עליו.
+              המטרה שלי היא ללוות אותך בעדינות ובסבלנות אל השורש של מה שמכביד, כדי שתוכל/י לחזור לעצמך.
+            </p>
+            <p>
+              בטיפול אצלי תמצא/י מרחב חם, בטוח ולא שיפוטי, שבו מותר לעצור, להקשיב ולהרגיש.
+              כל תהליך נבנה באופן אישי, בקצב שמתאים לך.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="chip">🌿 הקשבה</span>
+            <span class="chip">🤲 עדינות</span>
+            <span class="chip">🌱 צמיחה</span>
+            <span class="chip">🍃 טבעיות</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Where ===== -->
+    <section id="where" class="py-20">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="eyebrow">איפה נפגשים</p>
+          <h2 class="section-title">פנים מול פנים או מהבית</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <div class="reveal place-card">
+            <div class="place-icon bg-leaf-100 text-leaf-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-leaf-800">מפגש פיזי</h3>
+            <p class="mt-2 text-earth-800">בקריית גת והסביבה – במרחב שקט ונעים, שמאפשר לעצור ולהתחבר.</p>
+          </div>
+          <div class="reveal place-card">
+            <div class="place-icon bg-earth-100 text-earth-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-earth-800">מפגש בזום</h3>
+            <p class="mt-2 text-earth-800">לכל המעוניינים, מכל מקום בארץ ובעולם – מהנוחות של הבית.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="contact-bg py-20 text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
+        <div class="reveal">
+          <p class="font-hand text-3xl text-earth-200">הצעד הראשון הוא הכי חשוב</p>
+          <h2 class="mt-1 text-4xl font-extrabold md:text-5xl">בואו נדבר</h2>
+          <p class="mt-5 max-w-md text-lg leading-relaxed text-leaf-50/90">
+            מוזמנים לפנות בכל שאלה או לתאם שיחת היכרות. אשמח להקשיב ולחזור אליך בהקדם.
+          </p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a class="contact-link" href="https://wa.me/972504222251" target="_blank" rel="noopener">
+                <span class="contact-ic bg-[#25D366]">
+                  <svg viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.2-4.2-.3-.4a10.4 10.4 0 0 1-1.6-5.4C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.1 16 26.1zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+                </span>
+                <span><span class="block text-sm text-leaf-100/80">וואטסאפ</span><span class="font-bold" dir="ltr">050-4222251</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-link" href="mailto:sapir201039062@gmail.com">
+                <span class="contact-ic bg-earth-500">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                </span>
+                <span><span class="block text-sm text-leaf-100/80">מייל</span><span class="font-bold break-all">sapir201039062@gmail.com</span></span>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: להחליף את data-facebook-url בקישור לעמוד הפייסבוק כשיתקבל -->
+              <a id="facebookLink" class="contact-link" data-facebook-url="" href="#" target="_blank" rel="noopener">
+                <span class="contact-ic bg-[#1877F2]">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7H16l.6-4h-3.1V9c0-.6.4-1 1-1z"/></svg>
+                </span>
+                <span><span class="block text-sm text-leaf-100/80">פייסבוק</span><span class="font-bold" id="facebookLabel">בקרוב</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="reveal rounded-3xl bg-white p-7 text-earth-900 shadow-xl md:p-9" novalidate>
+          <h3 class="text-2xl font-bold text-leaf-800">השאירו פרטים</h3>
+          <p class="mt-1 text-sm text-earth-600">ההודעה תיפתח בוואטסאפ, מוכנה לשליחה לספיר.</p>
+
+          <label class="field">
+            <span>שם מלא</span>
+            <input name="name" type="text" required autocomplete="name" placeholder="איך לפנות אליך?" />
+          </label>
+          <label class="field">
+            <span>טלפון</span>
+            <input name="phone" type="tel" required autocomplete="tel" dir="ltr" placeholder="050-0000000" class="text-right" />
+          </label>
+          <fieldset class="field">
+            <span>סוג מפגש מועדף</span>
+            <div class="mt-2 flex gap-3">
+              <label class="pill"><input type="radio" name="mode" value="מפגש פיזי באזור קריית גת" checked /><span>פיזי – קריית גת</span></label>
+              <label class="pill"><input type="radio" name="mode" value="מפגש בזום" /><span>זום</span></label>
+            </div>
+          </fieldset>
+          <label class="field">
+            <span>במה אשמח לעזור? <small class="text-earth-500">(לא חובה)</small></span>
+            <textarea name="message" rows="3" placeholder="כמה מילים על מה שמביא/ה אותך..."></textarea>
+          </label>
+          <p id="formError" class="mt-3 hidden text-sm font-medium text-red-700" role="alert">נא למלא שם ומספר טלפון תקין.</p>
+          <button type="submit" class="btn-primary mt-5 w-full justify-center">שליחה בוואטסאפ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-earth-900 py-10 text-earth-100">
+    <div class="mx-auto max-w-6xl px-5 text-center text-sm">
+      <p class="text-base font-bold text-white">ספיר מיידני · תרפיית ממדים</p>
+      <p class="mt-1">קריית גת והסביבה · מפגשים בזום</p>
+      <p class="mx-auto mt-5 max-w-2xl text-xs leading-relaxed text-earth-300">
+        הטיפול בתרפיית ממדים הוא טיפול משלים, ואינו מחליף אבחון, ייעוץ או טיפול רפואי או נפשי מקצועי.
+        במצב רפואי או נפשי יש להתייעץ עם רופא/ה או גורם מוסמך.
+      </p>
+      <p class="mt-5 text-earth-400">© <span id="year"></span> ספיר מיידני. כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Floating WhatsApp ===== -->
+  <a href="https://wa.me/972504222251?text=%D7%94%D7%99%D7%99%20%D7%A1%D7%A4%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%AA%D7%A8%D7%A4%D7%99%D7%99%D7%AA%20%D7%9E%D7%9E%D7%93%D7%99%D7%9D"
+     class="wa-float" target="_blank" rel="noopener" aria-label="שליחת הודעת וואטסאפ לספיר">
+    <span class="wa-tooltip">דברו איתי בוואטסאפ</span>
+    <svg viewBox="0 0 32 32" fill="currentColor" class="h-8 w-8"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.2-4.2-.3-.4a10.4 10.4 0 0 1-1.6-5.4C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.1 16 26.1zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

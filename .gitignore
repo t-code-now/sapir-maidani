@@ -1,0 +1,12 @@
+# local tooling
+.claude/
+node_modules/
+
+# reference/unused assets (not part of the site)
+assets/images/logo-reference.jpg
+assets/images/sapir-cutout.png
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
